@@ -591,7 +591,7 @@ module.exports = {
                         if (item.path.split('/').length === 1) {
                             output += `${prefix}[${item.type}] [${file}](${url})\n`;
                         } else {
-                            const preIndent = ' |　 '.repeat(Math.max(item.path.split('/').length - 1, 0));
+                            const preIndent = ' │　 '.repeat(Math.max(item.path.split('/').length - 1, 0));
                             output += ` ${preIndent}${prefix}[${item.type}] [${file}](${url})\n`;
                         }
             
